@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Hello, people",
+    "version": "0.1",
+    "description": "Teste Hello, World",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Diga oi!",
+        "default_icon": {
+            "16": "img/icon.png",
+            "48": "img/icon.png",
+            "128": "img/icon.png"
+        }
+    },
+    "icons": {
+        "16": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    }
+}
