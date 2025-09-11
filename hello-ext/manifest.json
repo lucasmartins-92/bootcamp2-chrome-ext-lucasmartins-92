@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
     "name": "Hello, people",
-    "version": "0.1",
-    "description": "Teste Hello, World",
+    "version": "0.2.0",
+    "description": "Botão que diz oie",
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Diga oi!",
+        "default_title": "Diga oie!",
         "default_icon": {
             "16": "img/icon.png",
             "48": "img/icon.png",

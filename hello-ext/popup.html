@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oie</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Oie, pessoas!</h1>
-    <p>Experimentando com extensões do Chrome</p>
-    <button id="helloButton">Diga oie você também!</button>
+  <body class="bg-light">
+    <div class="container p-3" style="width: 320px">
+      <div class="card shadow-sm border-0 rounded-4">
+        <div class="card-body">
+          <h1 id="titulo" class="h4 fw-bold text-center mb-2">Oie, pessoas!</h1>
+          <p class="text-muted text-center mb-3">
+            Experimentando com extensões do Chrome
+          </p>
+          <div class="d-grid gap-2">
+            <button id="oiButton" class="btn btn-primary">
+              Diga oie você também!
+            </button>
+            <button id="resetButton" class="btn btn-outline-secondary">
+              Resetar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-white">
+        <small class="text-muted"
+          >Desenvolvido por Lucas Martins de Andrade para a disciplina de
+          Bootcamp II.</small
+        >
+      </div>
+    </div>
+    <script src="/hello-ext/popup.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
