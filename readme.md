@@ -28,11 +28,11 @@ Um projeto simples de extensão para o Google Chrome, desenvolvido para demonstr
 
 ## 📂 Estrutura dos Arquivos
 
-├── images/
-│   ├── icon48.png
-│   └── icon128.png
-├── background.js       # Service worker para tarefas em background
-├── manifest.json       # Arquivo de configuração da extensão
-├── popup.html          # Estrutura HTML do popup
-├── popup.js            # Lógica de interatividade do popup
-└── style.css           # Estilos personalizados para o popup
+    ├── images/
+    │   ├── icon48.png
+    │   └── icon128.png
+    ├── background.js       # Service worker para tarefas em background
+    ├── manifest.json       # Arquivo de configuração da extensão
+    ├── popup.html          # Estrutura HTML do popup
+    ├── popup.js            # Lógica de interatividade do popup
+    └── style.css           # Estilos personalizados para o popup
