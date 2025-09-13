@@ -1,23 +1,22 @@
-(() => {
-    const oiButton = document.getElementById("oiButton");
-    const resetButton = document.getElementById("resetButton");
-    const titulo = document.getElementById("titulo");
+document.addEventListener('DOMContentLoaded', () => {
+    const colorButton = document.getElementById('colorButton');
+    const cores = [
+        '#a8dadc',
+        '#f1faee',
+        '#e63946',
+        '#f4a261',
+        '#2a9d8f',
+        '#e9c46a',
+    ];
 
-    const mensagemOriginal = titulo?.textContent || "Oie, pessoas!";
-    let alternado = false;
+    let indiceAtual = 0;
+    colorButton.addEventListener('click', () => {
+        document.body.style.backgroundColor = cores[indiceAtual];
+        indiceAtual = (indiceAtual + 1) % cores.length;
+    });
 
-    function alternarMensagem() {
-        if (!titulo) return;
-        alternado = !alternado;
-        titulo.textContent = alternado ? "Oie pra você também!" : mensagemOriginal;
-    }
-
-    function resetarMensagem() {
-        if (!titulo) return;
-        alternado = false;
-        titulo.textContent = mensagemOriginal;
-    }
-
-    oiButton?.addEventListener("click", alternarMensagem);
-    resetButton?.addEventListener("click", resetarMensagem);
-})();
+    const dontPressButton = document.getElementById('dontPressButton');
+    dontPressButton.addEventListener('click', () => {
+        chrome.tabs.create({ url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' });
+    });
+});

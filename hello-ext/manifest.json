@@ -1,11 +1,18 @@
 {
     "manifest_version": 3,
-    "name": "Hello, people",
-    "version": "0.2.0",
-    "description": "Botão que diz oie",
+    "name": "Popup Color Changer",
+    "version": "0.3.0",
+    "permissions": [
+        "tabs",
+        "notifications"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "description": "Botão que muda a cor do popup",
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Diga oie!",
+        "default_title": "Aperte o botão!",
         "default_icon": {
             "16": "img/icon.png",
             "48": "img/icon.png",
