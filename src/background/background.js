@@ -4,7 +4,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo.status === 'complete' && tab.url === RICKROLL) {
         chrome.notifications.create({
             type: 'basic',
-            iconUrl: 'img/icon.png',
+            iconUrl: 'icons/icon.png',
             title: 'Rickroll!',
             message: 'Segura o Rickroll!',
         });

@@ -1,0 +1,23 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "description": "Um projeto simples de extensão para o Google Chrome, desenvolvido para demonstrar funcionalidades essenciais utilizando Manifest V3 para a disciplina de Bootcamp II. A extensão inclui um popup interativo e um service worker para tarefas em segundo plano.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmartins-92/chrome-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lucasmartins-92/chrome-extension/issues"
+  },
+  "homepage": "https://github.com/lucasmartins-92/chrome-extension#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0"
+  }
+}
