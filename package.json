@@ -4,7 +4,7 @@
   "description": "Um projeto simples de extensão para o Google Chrome, desenvolvido para demonstrar funcionalidades essenciais utilizando Manifest V3 para a disciplina de Bootcamp II. A extensão inclui um popup interativo e um service worker para tarefas em segundo plano.",
   "scripts": {
     "build": "node scripts/build-extensions.mjs",
-    "test:e2e": "playwright test --reporter=list, html",
+    "test:e2e": "playwright test",
     "test": "npm run build && npm run test:e2e"
   },
   "repository": {

@@ -1,7 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 import path from "node:path";
 
-const dist = path.join(__dirname, "../dist");
+const dist = path.join(__dirname, "dist");
 
 export default defineConfig({
   testDir: __dirname,
@@ -14,8 +14,8 @@ export default defineConfig({
         headless: false,
         launchOptions: {
           args: [
-            "--disable-extensions-except=${dist}",
-            "--load-extension=${dist}",
+            `--disable-extensions-except=${dist}`,
+            `--load-extension=${dist}`,
           ],
         },
       },
