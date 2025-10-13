@@ -1,39 +1,56 @@
-# Color Changer (Manifest V3)
+# Chrome Extension (Manifest V3)
 
-Um projeto simples de extensão para o Google Chrome, desenvolvido para demonstrar funcionalidades essenciais utilizando Manifest V3 para a disciplina de Bootcamp II. A extensão inclui um popup interativo e um service worker para tarefas em segundo plano.
+Extensão para Google Chrome desenvolvida com Manifest V3 para a disciplina de Bootcamp II. Inclui popup interativo, service worker e testes automatizados.
 
 ## Funcionalidades
 
-* **Popup Interativo:** Interface de usuário acessada ao clicar no ícone da extensão.
-* **Mudança de Cor:** Um botão que altera a cor de fundo do popup, ciclando através de uma paleta de cores predefinida.
-* **Abertura de Aba:** Um segundo botão que abre uma aba específica no navegador.
-* **Service Worker em Background:** Um script que opera em segundo plano para monitorar eventos do navegador.
-* **Notificações do Sistema:** O service worker exibe uma notificação nativa quando uma aba monitorada termina de carregar.
+* **Popup Interativo:** Interface de usuário com mudança de cores
+* **Service Worker:** Script em segundo plano para eventos do navegador
+* **Build Automatizado:** Sistema de build para empacotamento
+* **Testes E2E:** Testes automatizados com Playwright
+* **CI/CD:** Pipeline de integração contínua com GitHub Actions
 
-## Tecnologias Utilizadas
+## Tecnologias
 
-* HTML5
-* CSS3
-* JavaScript
-* API de Extensões do Chrome (Manifest V3)
+* HTML5, CSS3, JavaScript
+* Chrome Extensions API (Manifest V3)
+* Playwright (testes)
+* GitHub Actions (CI/CD)
+* Docker (containerização)
 
-## Como Instalar e Testar
+## Desenvolvimento
 
-1.  Faça o download ou clone este repositório para a sua máquina.
-2.  Abra o Google Chrome e navegue até `chrome://extensions`.
-3.  Ative o **Modo de Desenvolvedor** (Developer Mode) no canto superior direito.
-4.  Clique em **Carregar sem compactação** (Load unpacked).
-5.  Selecione a pasta do projeto.
-6.  A extensão aparecerá na sua barra de ferramentas, pronta para ser testada.
+```bash
+# Instalar dependências
+npm install
 
-## 📂 Estrutura dos Arquivos
+# Build da extensão
+npm run build
 
-    ├── img/
-    │   ├── icon.png
-    ├── background.js
-    ├── index.html
-    ├── manifest.json
-    ├── popup.html
-    ├── popup.js
-    ├── readme.md
-    └── style.css
+# Executar testes
+npm test
+
+# Apenas testes E2E
+npm run test:e2e
+```
+
+## Instalação no Chrome
+
+1. Execute `npm run build`
+2. Abra Chrome → `chrome://extensions`
+3. Ative "Modo de desenvolvedor"
+4. Clique "Carregar sem compactação"
+5. Selecione a pasta `dist/`
+
+## 📂 Estrutura
+
+```
+├── src/
+│   ├── background/     # Service worker
+│   ├── popup/          # Interface do popup
+│   └── content/        # Scripts de conteúdo
+├── tests/              # Testes Playwright
+├── scripts/            # Scripts de build
+├── .github/workflows/  # CI/CD
+└── dist/              # Build final
+```
